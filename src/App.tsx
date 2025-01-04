@@ -6,6 +6,7 @@ function App() {
     <>
       <div className='flex flex-col justify-center items-center'>
         <h1>{text}</h1>
+        hi
       </div>
     </>
   )
