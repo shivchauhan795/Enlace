@@ -8,11 +8,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/Login.tsx'
 import Register from './components/Register.tsx'
 import Admin from './components/Admin.tsx'
+import Redirect from './components/Redirect.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+  },
+  {
+    path: '/:shorturl',
+    element: <Redirect />,
   },
   {
     element: <ProtectedRoutes />,
